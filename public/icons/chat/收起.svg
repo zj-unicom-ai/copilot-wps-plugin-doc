@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="16px" height="16px" viewBox="0 0 16 16" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <title>收起</title>
+    <g id="页面-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="AI助手_对话" transform="translate(-1820, -293)" fill-rule="nonzero">
+            <g id="收起" transform="translate(1820, 293)">
+                <polygon id="路径" fill-opacity="0.01" fill="#FFFFFF" opacity="0.01" points="0 0 16 0 16 16 0 16"></polygon>
+                <path d="M2.2896,11.0437333 C2.0813963,10.8354667 2.0813963,10.4978666 2.2896,10.2896 L7.62293333,4.95626667 C7.83119992,4.74806296 8.16880008,4.74806296 8.37706667,4.95626667 L13.7104,10.2896 C13.9125186,10.4988687 13.909628,10.8315119 13.7039033,11.0372366 C13.4981786,11.2429613 13.1655354,11.2458519 12.9562667,11.0437333 L8,6.08746667 L3.04373333,11.0437333 C2.83546674,11.251937 2.49786659,11.251937 2.2896,11.0437333 Z" id="路径" fill="#636366"></path>
+            </g>
+        </g>
+    </g>
+</svg>

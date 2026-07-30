@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="16px" height="16px" viewBox="0 0 16 16" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <title>AI助手</title>
+    <defs>
+        <linearGradient x1="100%" y1="50%" x2="0%" y2="50%" id="linearGradient-1">
+            <stop stop-color="#7427FF" offset="0%"></stop>
+            <stop stop-color="#FF5E9B" offset="100%"></stop>
+        </linearGradient>
+    </defs>
+    <g id="页面-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="AI助手" transform="translate(-1628, -233)" fill="url(#linearGradient-1)" fill-rule="nonzero">
+            <g transform="translate(1628, 233)" id="形状结合">
+                <path d="M8,0 C12.418278,0 16,3.581722 16,8 C16,10.1217319 15.1571453,12.1565632 13.6568543,13.6568543 C12.1565632,15.1571453 10.1217319,16 8,16 L1.77799999,16 C1.30644507,16 0.854203813,15.8126756 0.520764133,15.4792359 C0.187324453,15.1457962 0,14.6935549 0,14.222 L0,8 C0,3.581722 3.581722,0 8,0 Z M7.37799999,5 L6.005,5 L3.99999999,11 L5.17299999,11 L5.62200001,9.536 L7.736,9.536 L8.19300001,11 L9.383,11 L7.37799999,5 Z M11,5 L9.85200001,5 L9.85200001,11 L11,11 L11,5 Z M6.68700001,6.00900001 L6.93699999,6.91900001 L7.45299999,8.609 L5.90499999,8.61000001 L6.43800001,6.90000001 L6.671,6.00900001 L6.68700001,6.00900001 Z"></path>
+            </g>
+        </g>
+    </g>
+</svg>

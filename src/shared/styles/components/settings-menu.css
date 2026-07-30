@@ -1,0 +1,43 @@
+.settings-menu {
+	position: absolute;
+	top: 10px;
+	right: 20px;
+	z-index: 100;
+}
+
+.settings-button {
+	background: none;
+	border: none;
+	color: #666;
+	font-size: 20px;
+	cursor: pointer;
+	padding: 4px 8px;
+	border-radius: 4px;
+}
+
+.settings-button:hover {
+	background-color: rgba(0, 0, 0, 0.05);
+}
+
+.settings-dropdown {
+	position: absolute;
+	right: 0;
+	top: 100%;
+	background: white;
+	border-radius: 8px;
+	box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+	min-width: 120px;
+	margin-top: 4px;
+}
+
+.menu-item {
+	padding: 8px 16px;
+	font-size: 14px;
+	color: #333;
+	cursor: pointer;
+	transition: background-color 0.2s;
+}
+
+.menu-item:hover {
+	background-color: #f5f5f5;
+}

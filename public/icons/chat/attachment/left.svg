@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="32px" height="32px" viewBox="0 0 32 32" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <title>编组 2</title>
+    <defs>
+        <circle id="path-1" cx="12" cy="12" r="12"></circle>
+        <filter x="-25.0%" y="-25.0%" width="150.0%" height="150.0%" filterUnits="objectBoundingBox" id="filter-2">
+            <feOffset dx="0" dy="0" in="SourceAlpha" result="shadowOffsetOuter1"></feOffset>
+            <feGaussianBlur stdDeviation="2" in="shadowOffsetOuter1" result="shadowBlurOuter1"></feGaussianBlur>
+            <feColorMatrix values="0 0 0 0 0   0 0 0 0 0   0 0 0 0 0  0 0 0 0.145649516 0" type="matrix" in="shadowBlurOuter1"></feColorMatrix>
+        </filter>
+    </defs>
+    <g id="页面-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="AI助手调整0807" transform="translate(-1482, -922)">
+            <g id="编组-2" transform="translate(1486, 926)">
+                <g id="椭圆形">
+                    <use fill="black" fill-opacity="1" filter="url(#filter-2)" xlink:href="#path-1"></use>
+                    <use fill="#FFFFFF" fill-rule="evenodd" xlink:href="#path-1"></use>
+                </g>
+                <path d="M14.9360664,11.6963427 C14.9351919,11.6930097 14.9309114,11.6896317 14.9292084,11.6862988 C14.8881063,11.5916252 14.8315851,11.5011404 14.7528328,11.4232216 C14.7519583,11.4223658 14.7511299,11.4223658 14.7502553,11.4215551 C14.7493808,11.4206993 14.7493808,11.4198886 14.7485523,11.4190329 L10.4965755,7.24654925 C10.1626495,6.91893001 9.6206812,6.91726355 9.2858806,7.24488279 C8.95107999,7.57164627 8.95025152,8.10198947 9.28417761,8.42960871 L12.9308069,12.0080629 L9.254214,15.5664294 C8.9177104,15.8923371 8.91513289,16.4218696 9.24735596,16.7511553 C9.41429598,16.9170368 9.63522572,17 9.85610944,17 C10.0735872,17 10.2910649,16.9187483 10.4580509,16.7578662 L14.7459748,12.6079926 C15.0002741,12.3624357 15.0636534,12.0004512 14.9360664,11.6963427 Z" id="路径" fill="#E60027" fill-rule="nonzero" transform="translate(12, 12) scale(-1, 1) translate(-12, -12)"></path>
+            </g>
+        </g>
+    </g>
+</svg>

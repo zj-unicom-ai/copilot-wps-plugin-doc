@@ -1,0 +1,19 @@
+# NOTICE
+
+This product includes third-party software.
+
+## Microsoft Office JavaScript API (Office.js)
+
+The file `public/office.js` is a redistributed copy of the Microsoft Office JavaScript API library
+(or a compatible WPS-oriented build used by the WPS JS add-in runtime).
+
+Microsoft Office.js is subject to the Microsoft software license terms for Office Add-ins / Office.js.
+See: https://learn.microsoft.com/office/dev/add-ins/
+
+This project does **not** claim ownership of Office.js. If you redistribute this repository, you must
+comply with Microsoft's applicable license terms for that library.
+
+## Other open-source dependencies
+
+Runtime and build dependencies are declared in `package.json` and `package-lock.json` and are
+licensed under their respective open-source licenses (MIT, Apache-2.0, etc.).

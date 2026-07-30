@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="24px" height="24px" viewBox="0 0 24 24" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <title>suspend</title>
+    <g id="页面-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="AI助手_对话" transform="translate(-1816, -1032)">
+            <g id="suspend" transform="translate(1816, 1032)">
+                <rect id="矩形" fill-opacity="0.01" fill="#FFFFFF" opacity="0.01" x="0" y="0" width="24" height="24"></rect>
+                <path d="M18.075,18.075 C15.6227707,20.5304927 11.9341205,21.2696564 8.72511567,19.948611 C5.51611084,18.6275656 3.41691228,15.5057282 3.40406884,12.0354675 C3.39134282,8.56520673 5.46748249,5.42798708 8.66666666,4.08333334 C12.45207,2.49228499 16.8341702,3.80216893 19.1254327,7.20963556 C21.4166953,10.6171022 20.9765763,15.1695624 18.075,18.075 Z M12,2 C6.4771525,2 2,6.4771525 2,12 C2,17.5228475 6.4771525,22 12,22 C17.5228475,22 22,17.5228475 22,12 C22,9.3478351 20.9464316,6.80429597 19.0710678,4.92893219 C17.195704,3.0535684 14.6521649,2 12,2 Z" id="形状" fill="#000000" fill-rule="nonzero"></path>
+                <rect id="矩形" fill="#000000" x="9" y="9" width="6" height="6" rx="1"></rect>
+            </g>
+        </g>
+    </g>
+</svg>

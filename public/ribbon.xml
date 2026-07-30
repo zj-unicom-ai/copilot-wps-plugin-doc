@@ -1,0 +1,71 @@
+<customUI xmlns="http://schemas.microsoft.com/office/2006/01/customui" onLoad="ribbon.OnAddinLoad">
+    <ribbon startFromScratch="false">
+        <tabs>
+            <tab id="wpsAddinTab" label="AI智写" getImage="ribbon.GetImage">
+                <group id="btnDemoGroup" label="group1">
+                    <button id="btnShowChatTaskPane" label="自由写作" tag="AI对话" onAction="ribbon.OnAction"
+                        getEnabled="ribbon.OnGetEnabled" getImage="ribbon.GetImage"
+                        getVisible="ribbon.OnGetVisible" size="large" supertip="AI对话，精准回答及生成文档" />
+                    <button id="btnWriting" label="场景写作" tag="写作" onAction="ribbon.OnAction"
+                        enabled="true" getImage="ribbon.GetImage" getVisible="ribbon.OnGetVisible"
+                        size="large" />
+                    <menu id="menuPolishbox" size="large" getImage="ribbon.GetImage" label="润色" tag="润色" supertip="优化逻辑与表达，让你的文章更专业">
+                        <button id="btnFastPolish" label="润色" tag="润色" onAction="ribbon.OnAction" supertip="优化逻辑与表达，让你的文章更专业"/>
+                        <button id="btnExpansionPolish" label="扩写" tag="扩写" onAction="ribbon.OnAction"/>
+                        <button id="btnAbbreviation" label="缩写" tag="缩写" onAction="ribbon.OnAction"/>
+                        <button id="btnContinuation" label="续写" tag="续写" onAction="ribbon.OnAction"/>
+                    </menu>
+                    <button id="btnTextErrorCorrection" label="纠错" tag="智能纠错" onAction="ribbon.OnAction" getImage="ribbon.GetImage" size="large"/>
+                    <button id="btnShowPaiBan" label="排版" tag="智能排版" onAction="ribbon.OnAction" getImage="ribbon.GetImage" size="large"/>
+                    <button id="btnShowMindMap" label="脑图" tag="脑图" onAction="ribbon.OnAction"
+                        getEnabled="ribbon.OnGetEnabled" getImage="ribbon.GetImage"
+                        getVisible="ribbon.OnGetVisible" size="large" supertip="文字转思维导图"/>
+                    <button id="btnTranslate" label="翻译" tag="翻译" onAction="ribbon.OnAction"
+                        getEnabled="ribbon.OnGetEnabled" getImage="ribbon.GetImage"
+                        getVisible="ribbon.OnGetVisible" size="large" />
+                    <menu id="menuToolbox" size="large" getImage="ribbon.GetImage" label="工具箱" tag="工具箱">
+                        <menu id="btnQuickDelete" label="一键删除" tag="一键删除">
+                            <button id="btnDeleteSpaces" label="删除空格" tag="删除空格" onAction="ribbon.onToolboxAction"/>
+                            <button id="btnDeleteEmptyLines" label="删除多余空行" tag="删除多余空行" onAction="ribbon.onToolboxAction" />
+                            <button id="btnDeleteGhostChar" label="删除幽灵字符" tag="删除幽灵字符" onAction="ribbon.onToolboxAction" />
+                            <button id="btnDeleteBlankPage" label="删除空白页" tag="删除空白页" onAction="ribbon.onToolboxAction" />
+                            <button id="btnClearFormat" label="去除选中内容格式" tag="去除选中内容格式" onAction="ribbon.onToolboxAction" />
+                            <button id="btnRemoveHyperlinks" label="去超链接识别" tag="去超链接识别" onAction="ribbon.onToolboxAction" />
+                            <button id="btnRemoveUnderline" label="消除下划波浪线" tag="消除下划波浪线" onAction="ribbon.onToolboxAction" />
+                            <button id="btnRemoveHeaderLine" label="去除页眉横线" tag="去除页眉横线" onAction="ribbon.onToolboxAction" />
+                        </menu>
+                        <menu id="charConversionMenu" label="字符转换" tag="字符转换">
+                            <button id="btnEnToCnPunct" label="英文标点转中文" tag="英文标点转中文" onAction="ribbon.onToolboxAction" />
+                            <button id="btnCnToEnPunct" label="中文标点转英文" tag="中文标点转英文" onAction="ribbon.onToolboxAction" />
+                            <button id="btnQuoteConvert" label="“ 转 ‘" tag="“ 转 ‘" onAction="ribbon.onToolboxAction" />
+                            <button id="btnApostropheConvert" label="‘ 转 “" tag="‘ 转 “" onAction="ribbon.onToolboxAction" />
+                            <button id="btnGhostCharToSpace" label="幽灵字符转空格" tag="幽灵字符转空格" onAction="ribbon.onToolboxAction" />
+                        </menu>
+                        <button id="btnDesensitize" label="一键脱敏" tag="一键脱敏" onAction="ribbon.onToolboxAction" />
+                    </menu>
+                    <menu id="menuHelp" size="large" getImage="ribbon.GetImage" label="帮助" tag="帮助">
+                        <button id="btnRefresh" label="清除缓存" tag="清除缓存" onAction="ribbon.OnAction" />
+                        <button id="btnSetting" label="通用设置" tag="通用设置" onAction="ribbon.OnAction" />
+                    </menu>
+                </group>
+            </tab>
+        </tabs>
+    </ribbon>
+    <contextMenus>
+        <contextMenu idMso="ContextMenuText">
+            <menu id="Menu_ContextMenuText" label="AI智写" getImage="ribbon.GetImage" visible="true">
+                <menu id="ContextMenu_Polishbox" label="润色" getImage="ribbon.GetImage" visible="true">
+                    <button id="ctxBtnFastPolish" label="润色" tag="润色" onAction="ribbon.OnAction" visible="true" />
+                    <button id="ctxBtnExpansionPolish" label="扩写" tag="扩写" onAction="ribbon.OnAction" visible="true" />
+                    <button id="ctxBtnAbbreviation" label="缩写" tag="缩写" onAction="ribbon.OnAction" visible="true" />
+                    <button id="ctxBtnContinuation" label="续写" tag="续写" onAction="ribbon.OnAction" visible="true" />
+                </menu>
+                <button id="ctxBtnTextErrorCorrection" label="纠错" tag="智能纠错" onAction="ribbon.OnAction" visible="true" getImage="ribbon.GetImage"/>
+                <button id="ctxBtnTranslate" label="翻译" tag="翻译" onAction="ribbon.OnAction"
+                    getImage="ribbon.GetImage" visible="true" />
+                <button id="ctxBtnDeleteSpaces" label="删除空格" tag="删除空格" onAction="ribbon.onToolboxAction"
+                    getImage="ribbon.GetImage" visible="true"/>
+            </menu>
+        </contextMenu>
+    </contextMenus>
+</customUI>

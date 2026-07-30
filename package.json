@@ -1,0 +1,77 @@
+{
+	"name": "wps-copilot-plugin",
+	"addonType": "wps",
+	"version": "1.8.1",
+	"private": false,
+	"license": "MIT",
+	"description": "WPS Office JS add-in for AI-powered writing, polishing, formatting, mind mapping, and translation",
+	"author": "wps-copilot-plugin contributors",
+	"keywords": [
+		"wps",
+		"office",
+		"add-in",
+		"ai",
+		"writing",
+		"llm",
+		"vue"
+	],
+	"homepage": "https://github.com/wps-copilot-plugin/wps-copilot-plugin#readme",
+	"repository": {
+		"type": "git",
+		"url": "git+https://github.com/wps-copilot-plugin/wps-copilot-plugin.git"
+	},
+	"bugs": {
+		"url": "https://github.com/wps-copilot-plugin/wps-copilot-plugin/issues"
+	},
+	"engines": {
+		"node": ">=18"
+	},
+	"type": "module",
+	"scripts": {
+		"dev": "vite --port 3889",
+		"build": "vite build",
+		"preview": "vite preview",
+		"extract-prompts": "node scripts/extract-prompts.mjs",
+		"clear-cache:mac": "rm -rf ~/Library/Containers/com.kingsoft.wpsoffice.mac/Data/Library/Application\\ Support/Kingsoft/office6/OfficeSpace/log/* && rm -rf ./node_modules/.vite",
+		"clear-cache:win": "powershell -NoProfile -Command \"Remove-Item -Recurse -Force .\\node_modules\\.vite -ErrorAction SilentlyContinue\"",
+		"clear-cache": "npm run clear-cache:mac",
+		"lint": "eslint . --ext .vue,.js,.jsx,.cjs,.mjs --ignore-path .gitignore",
+		"lint:fix": "npm run lint -- --fix",
+		"format": "prettier --write src/",
+		"format:check": "prettier --check src/",
+		"test": "vitest run",
+		"test:watch": "vitest"
+	},
+	"dependencies": {
+		"ant-design-vue": "^4.2.6",
+		"docx": "^9.5.0",
+		"dompurify": "^3.4.12",
+		"github-markdown-css": "^5.8.1",
+		"html2canvas": "^1.4.1",
+		"markdown-it": "^14.1.0",
+		"pinia": "^2.0.0",
+		"pinia-plugin-persistedstate": "^3.2.3",
+		"vue": "^3.4.29",
+		"vue-router": "^4.3.3",
+		"vue3-mindmap": "^0.5.12",
+		"wpsjs": "^2.2.2"
+	},
+	"devDependencies": {
+		"@rushstack/eslint-patch": "^1.8.0",
+		"@vitejs/plugin-vue": "^5.0.5",
+		"@vue/eslint-config-prettier": "^9.0.0",
+		"eslint": "^8.57.0",
+		"eslint-plugin-vue": "^9.23.0",
+		"jsdom": "^26.1.0",
+		"prettier": "^3.2.5",
+		"vite": "^5.3.1",
+		"vitest": "^3.2.7"
+	},
+	"optionalDependencies": {
+		"@rollup/rollup-linux-x64-gnu": "*",
+		"@rollup/rollup-win32-x64-msvc": "^4.62.0"
+	},
+	"overrides": {
+		"d3-color": "3.1.0"
+	}
+}

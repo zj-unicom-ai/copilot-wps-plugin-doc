@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<JsPlugin>
+  <ApiVersion>1.0.0</ApiVersion>
+  <Name>wps-copilot-plugin</Name>
+  <Description>AI智写 — WPS add-in with chat, polish, formatting, and translation.</Description>
+</JsPlugin>

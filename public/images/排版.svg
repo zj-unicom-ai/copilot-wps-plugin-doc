@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="21.1px" height="20.2666667px" viewBox="0 0 21.1 20.2666667" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <title>排版</title>
+    <g id="页面-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="WPS_语音识别调整1" transform="translate(-909.500000, -90.816667)">
+            <g id="编组-7" transform="translate(487.000000, 83.000000)">
+                <g id="排版" transform="translate(423.000000, 8.000000)">
+                    <path d="M5.58648111,0 L11.1367177,11.167 L6.79671968,11.1675 L7.39314115,10.5675 L6.70477137,8.16 L2.49502982,8.16 L1.59791252,10.28 L2.9249503,11.17 L0.213717694,11.17 L1.00397614,10.375 L5.58648111,0 Z M5.02485089,2.2275 L2.78827038,7.475 L6.51590457,7.475 L5.02485089,2.2275 Z" id="形状结合" fill="#E60027" fill-rule="nonzero"></path>
+                    <line x1="0" y1="14.5833333" x2="20" y2="14.5833333" id="路径-4" stroke="#636366" stroke-linecap="round"></line>
+                    <line x1="0" y1="19.5833333" x2="20" y2="19.5833333" id="路径-4" stroke="#636366" stroke-linecap="round"></line>
+                    <line x1="13.3333333" y1="10.4166667" x2="20" y2="10.4166667" id="路径-4" stroke="#636366" stroke-width="1.2" stroke-linecap="round"></line>
+                    <line x1="13.3333333" y1="5.41666667" x2="20" y2="5.41666667" id="路径-4" stroke="#636366" stroke-width="1.2" stroke-linecap="round"></line>
+                    <line x1="13.3333333" y1="0.416666667" x2="20" y2="0.416666667" id="路径-4" stroke="#636366" stroke-width="1.2" stroke-linecap="round"></line>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>
