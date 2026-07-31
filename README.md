@@ -1,4 +1,8 @@
-# AI智写 (wps-copilot-plugin)
+<p align="center">
+  <img src="docs/assets/logo.png" alt="Social Preview" width="240" />
+</p>
+
+# AI智写
 
 > **中文** | [English](README_EN.md)
 

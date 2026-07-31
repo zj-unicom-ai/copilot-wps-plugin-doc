@@ -1,4 +1,8 @@
-# AI智写 / AI Zhixie (wps-copilot-plugin)
+<p align="center">
+  <img src="docs/assets/logo.png" alt="Social Preview" width="240" />
+</p>
+
+# copilot-wps-plugin-doc （AI智写）
 
 > [中文](README.md) | **English**
 
