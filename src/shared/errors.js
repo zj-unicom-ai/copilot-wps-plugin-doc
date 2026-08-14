@@ -1,4 +1,4 @@
-/** Shown when LLM baseUrl / apiKey / model is missing. */
+/** Shown when LLM baseUrl / model is missing. */
 export const LLM_NOT_CONFIGURED_MSG = '请先在「帮助 → 通用设置」中配置模型 API'
 
 /** Generic message for upstream / network / proxy failures shown in the UI. */

@@ -52,7 +52,7 @@
 			</div>
 
 			<div class="form-field">
-				<label><span class="required">*</span> API Key</label>
+				<label>API Key</label>
 				<input
 					v-model="llm.apiKey"
 					type="password"
@@ -155,7 +155,7 @@ const credentialsKey = () => {
 	return `${(baseUrl || '').trim()}|${(apiKey || '').trim()}|${!!useFullUrl}`
 }
 
-const canFetchModels = () => !!(llm.value.baseUrl?.trim() && llm.value.apiKey?.trim())
+const canFetchModels = () => !!llm.value.baseUrl?.trim()
 
 const initSettings = () => {
 	const s = readSettings()

@@ -87,4 +87,18 @@ describe('settingsService', () => {
 		expect(getLlmConfig().useFullUrl).toBe(false)
 		expect(getLlmConfig().platform).toBe('unirouter')
 	})
+
+	it('treats baseUrl + model without apiKey as configured', () => {
+		writeSettings({
+			llm: {
+				platform: 'custom',
+				baseUrl: 'http://127.0.0.1:11434/v1',
+				useFullUrl: false,
+				apiKey: '',
+				model: 'llama3'
+			}
+		})
+		expect(isLlmConfigured()).toBe(true)
+		expect(getLlmConfig().apiKey).toBe('')
+	})
 })

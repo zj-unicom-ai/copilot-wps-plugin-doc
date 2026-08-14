@@ -119,7 +119,7 @@ export function getLlmConfig() {
 
 export function isLlmConfigured() {
 	const llm = getLlmConfig()
-	return !!(llm.baseUrl && llm.apiKey && llm.model)
+	return !!(llm.baseUrl && llm.model)
 }
 
 export { DEFAULT_LLM, SETTINGS_FILE, LEGACY_SETTINGS_FILE }

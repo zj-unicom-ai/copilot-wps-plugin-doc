@@ -61,16 +61,18 @@ export async function fetchAvailableModels(override = {}) {
 	const signal = override.signal
 
 	const modelsUrl = resolveModelsUrl(baseUrl, useFullUrl)
-	if (!modelsUrl || !apiKey) {
+	if (!modelsUrl) {
 		return []
+	}
+
+	const headers = { Accept: 'application/json' }
+	if (apiKey) {
+		headers.Authorization = `Bearer ${apiKey}`
 	}
 
 	const response = await fetch(resolveDevApiUrl(modelsUrl), {
 		method: 'GET',
-		headers: {
-			Authorization: `Bearer ${apiKey}`,
-			Accept: 'application/json'
-		},
+		headers,
 		signal
 	})
 	if (!response.ok) {
@@ -109,7 +111,7 @@ export async function streamChat(
 			maxTokens: maxTokens ?? llm.maxTokens,
 			hideThinkContent,
 			body,
-			isDirectModel: true
+			isDirectModel: !!llm.apiKey
 		},
 		onDataUpdate,
 		onErrorMessage
