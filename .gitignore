@@ -18,5 +18,7 @@ node_modules/.vite
 ~$*
 *.tmp
 *.temp
-.github
+# 屏蔽 .github 内部配置，但放行 PR 模板（贡献协议所需）
+.github/*
+!.github/PULL_REQUEST_TEMPLATE.md
 app-build
