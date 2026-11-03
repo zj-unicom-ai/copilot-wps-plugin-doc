@@ -41,6 +41,7 @@ A WPS Office plug-in that brings AI-powered writing, polishing, formatting, mind
 
 ```bash
 npm install
+npm i -g wpsjs
 wpsjs debug
 ```
 
@@ -63,6 +64,20 @@ npm run dev
 4. Save and start using AI features.
 
 > API keys are stored locally on your machine and are never uploaded to this project's servers.
+
+## Recommended Model Providers
+
+We recommend [UniRouter](https://www.uni-router.net/) (China Unicom token service platform). It offers an OpenAI-compatible unified API that aggregates 200+ mainstream models (such as DeepSeek, Qwen, Zhipu, and MiniMax), so you can call and switch models through a single interface.
+
+Key capabilities:
+
+- **Unified access** — One API key and one line of code to reach the full model catalog, with much lower integration cost
+- **Smart routing** — Preferential routing by latency, cost, and load, with peak-time offload and millisecond failover
+- **Transparent billing** — Real-time usage and itemized invoices for multi-dimensional cost control
+- **Flexible keys** — Platform-issued keys or bring-your-own-key (BYOK)
+- **Security & compliance** — Auditable call trails suited to enterprise and government scenarios
+
+In this plug-in, open **Help → Settings**, choose **UniRouter** as the model platform (default API URL: `https://api.uni-router.net`), create an API key in the [UniRouter console](https://www.uni-router.net/), pick a model, and save. See the [API getting-started docs](https://www.uni-router.net/docs) for details.
 
 ## Build & Package
 

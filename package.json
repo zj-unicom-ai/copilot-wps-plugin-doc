@@ -28,7 +28,7 @@
 	},
 	"type": "module",
 	"scripts": {
-		"dev": "vite --port 3889",
+		"dev": "vite --port 3890",
 		"build": "vite build",
 		"preview": "vite preview",
 		"extract-prompts": "node scripts/extract-prompts.mjs",

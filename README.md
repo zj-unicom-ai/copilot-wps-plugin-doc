@@ -41,6 +41,7 @@
 
 ```bash
 npm install
+npm i -g wpsjs
 wpsjs debug
 ```
 
@@ -63,6 +64,20 @@ npm run dev
 4. 保存后即可开始使用 AI 功能。
 
 > API Key 仅保存在本地，不会上传至本项目服务器。
+
+## 推荐接入的模型供应商
+
+推荐使用 [UniRouter（联通词元服务平台）](https://www.uni-router.net/)。它提供 OpenAI 兼容的统一 API，一站式聚合 200+ 主流大模型（如 DeepSeek、通义千问、智谱、MiniMax 等），用一套接口即可完成多模型调用与切换。
+
+主要能力：
+
+- **统一接入** — 一个 API Key、一行代码即可调用全站模型，显著降低对接成本
+- **智能调度** — 按时延、成本与负载择优路由，高峰分流与故障毫秒级切换
+- **透明计费** — 实时用量与明细账单，支持多维度成本管控
+- **灵活密钥** — 支持平台统一密钥与自有密钥（BYOK）两种接入方式
+- **安全合规** — 调用链路可审计，适配企业与政企场景的管控需求
+
+在本插件中，进入 **帮助 → 设置**，模型平台选择 **UniRouter**（默认 API 地址为 `https://api.uni-router.net`），前往 [UniRouter 控制台](https://www.uni-router.net/) 获取 API Key 并选择模型后保存即可使用。更多说明见 [首次调用 API 文档](https://www.uni-router.net/docs)。
 
 ## 构建与打包
 

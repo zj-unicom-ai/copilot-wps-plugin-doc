@@ -120,7 +120,7 @@ import { readSettings, writeSettings, DEFAULT_LLM } from '@/services/settingsSer
 import { fetchAvailableModels } from '@/services/llmService.js'
 import { isLikelyNonChatModel } from '@/utils/llmModel.js'
 
-const UNIROUTER_BASE_URL = 'https://www.unirouter.net/'
+const UNIROUTER_BASE_URL = 'https://api.uni-router.net'
 
 const autoStart = ref(true)
 const llm = ref({ ...DEFAULT_LLM })

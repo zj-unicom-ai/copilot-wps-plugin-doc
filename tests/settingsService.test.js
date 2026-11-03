@@ -78,7 +78,7 @@ describe('settingsService', () => {
 		writeSettings({
 			llm: {
 				platform: 'unirouter',
-				baseUrl: 'https://www.unirouter.net/',
+				baseUrl: 'https://api.uni-router.net',
 				useFullUrl: false,
 				apiKey: 'k',
 				model: 'm'
