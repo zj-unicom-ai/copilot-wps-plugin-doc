@@ -58,7 +58,7 @@ npm run dev
 1. 在 WPS 中打开本插件。
 2. 进入 **帮助 → 设置**。
 3. 配置 **模型配置**：
-   - **API 地址** — 例如 `https://api.openai.com/v1/chat/completions`
+   - **API 地址** — 例如 `https://www.uni-router.net/v1/chat/completions`
    - **API Key** — 你的服务商 API 密钥
    - **模型** — 例如 `gpt-4o-mini`
 4. 保存后即可开始使用 AI 功能。
@@ -77,7 +77,7 @@ npm run dev
 - **灵活密钥** — 支持平台统一密钥与自有密钥（BYOK）两种接入方式
 - **安全合规** — 调用链路可审计，适配企业与政企场景的管控需求
 
-在本插件中，进入 **帮助 → 设置**，模型平台选择 **UniRouter**（默认 API 地址为 `https://api.uni-router.net`），前往 [UniRouter 控制台](https://www.uni-router.net/) 获取 API Key 并选择模型后保存即可使用。更多说明见 [首次调用 API 文档](https://www.uni-router.net/docs)。
+在本插件中，进入 **帮助 → 设置**，模型平台选择 **UniRouter**（默认 API 地址为 `https://www.uni-router.net`），前往 [UniRouter 控制台](https://www.uni-router.net/) 获取 API Key 并选择模型后保存即可使用。更多说明见 [首次调用 API 文档](https://www.uni-router.net/docs)。
 
 ## 构建与打包
 

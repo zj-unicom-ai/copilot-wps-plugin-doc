@@ -11,7 +11,7 @@ const LEGACY_SETTINGS_FILE = 'tongtong_doc_common_setting.json'
 /** @type {{ platform: 'unirouter' | 'custom', baseUrl: string, useFullUrl: boolean, apiKey: string, model: string, temperature: number, maxTokens: number }} */
 const DEFAULT_LLM = {
 	platform: 'unirouter',
-	baseUrl: 'https://api.uni-router.net',
+	baseUrl: 'https://www.uni-router.net',
 	useFullUrl: false,
 	apiKey: '',
 	model: '',

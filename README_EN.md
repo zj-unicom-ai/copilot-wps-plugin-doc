@@ -58,7 +58,7 @@ npm run dev
 1. Open the plug-in in WPS.
 2. Go to **Help → Settings**.
 3. Configure **Model Configuration**:
-   - **API URL** — e.g. `https://api.openai.com/v1/chat/completions`
+   - **API URL** — e.g. `https://www.uni-router.net/v1/chat/completions`
    - **API Key** — your provider API key
    - **Model** — e.g. `gpt-4o-mini`
 4. Save and start using AI features.
@@ -77,7 +77,7 @@ Key capabilities:
 - **Flexible keys** — Platform-issued keys or bring-your-own-key (BYOK)
 - **Security & compliance** — Auditable call trails suited to enterprise and government scenarios
 
-In this plug-in, open **Help → Settings**, choose **UniRouter** as the model platform (default API URL: `https://api.uni-router.net`), create an API key in the [UniRouter console](https://www.uni-router.net/), pick a model, and save. See the [API getting-started docs](https://www.uni-router.net/docs) for details.
+In this plug-in, open **Help → Settings**, choose **UniRouter** as the model platform (default API URL: `https://www.uni-router.net`), create an API key in the [UniRouter console](https://www.uni-router.net/), pick a model, and save. See the [API getting-started docs](https://www.uni-router.net/docs) for details.
 
 ## Build & Package
 

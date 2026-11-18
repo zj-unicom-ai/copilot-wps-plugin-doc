@@ -18,6 +18,10 @@ node_modules/.vite
 ~$*
 *.tmp
 *.temp
+# Codex 环境临时文件
+.codex-git-sanitized.git/
+.codex-sanitized-history.bundle
+.codex_sandbox_check.txt
 # 屏蔽 .github 内部配置，但放行 PR 模板（贡献协议所需）
 .github/*
 !.github/PULL_REQUEST_TEMPLATE.md

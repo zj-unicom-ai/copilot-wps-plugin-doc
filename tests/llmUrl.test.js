@@ -4,8 +4,8 @@ import { resolveChatCompletionsUrl, resolveModelsUrl } from '@/utils/llmUrl.js'
 describe('llmUrl', () => {
 	describe('resolveChatCompletionsUrl', () => {
 		it('appends /v1/chat/completions when useFullUrl is false', () => {
-			expect(resolveChatCompletionsUrl('https://api.uni-router.net', false)).toBe(
-				'https://api.uni-router.net/v1/chat/completions'
+			expect(resolveChatCompletionsUrl('https://www.uni-router.net', false)).toBe(
+				'https://www.uni-router.net/v1/chat/completions'
 			)
 			expect(resolveChatCompletionsUrl('https://api.example.com', false)).toBe(
 				'https://api.example.com/v1/chat/completions'
@@ -21,9 +21,9 @@ describe('llmUrl', () => {
 		})
 
 		it('still appends when useFullUrl is false even if path looks like completions', () => {
-			const full = 'https://api.uni-router.net/v1/chat/completions'
+			const full = 'https://www.uni-router.net/v1/chat/completions'
 			expect(resolveChatCompletionsUrl(full, false)).toBe(
-				'https://api.uni-router.net/v1/chat/completions/v1/chat/completions'
+				'https://www.uni-router.net/v1/chat/completions/v1/chat/completions'
 			)
 		})
 
@@ -35,20 +35,20 @@ describe('llmUrl', () => {
 
 	describe('resolveModelsUrl', () => {
 		it('appends /v1/models when useFullUrl is false', () => {
-			expect(resolveModelsUrl('https://api.uni-router.net', false)).toBe(
-				'https://api.uni-router.net/v1/models'
+			expect(resolveModelsUrl('https://www.uni-router.net', false)).toBe(
+				'https://www.uni-router.net/v1/models'
 			)
-			expect(resolveModelsUrl('https://api.uni-router.net/v1/chat/completions', false)).toBe(
-				'https://api.uni-router.net/v1/chat/completions/v1/models'
+			expect(resolveModelsUrl('https://www.uni-router.net/v1/chat/completions', false)).toBe(
+				'https://www.uni-router.net/v1/chat/completions/v1/models'
 			)
 		})
 
 		it('derives /v1/models from full chat URL when useFullUrl is true', () => {
-			expect(resolveModelsUrl('https://api.uni-router.net/v1/chat/completions', true)).toBe(
-				'https://api.uni-router.net/v1/models'
+			expect(resolveModelsUrl('https://www.uni-router.net/v1/chat/completions', true)).toBe(
+				'https://www.uni-router.net/v1/models'
 			)
-			expect(resolveModelsUrl('https://api.uni-router.net/v1/chat/completions ', true)).toBe(
-				'https://api.uni-router.net/v1/models'
+			expect(resolveModelsUrl('https://www.uni-router.net/v1/chat/completions ', true)).toBe(
+				'https://www.uni-router.net/v1/models'
 			)
 			expect(resolveModelsUrl('https://api.example.com:8443/gateway/v1/chat/completions', true)).toBe(
 				'https://api.example.com:8443/gateway/v1/models'

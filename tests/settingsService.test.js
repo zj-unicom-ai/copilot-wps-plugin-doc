@@ -59,7 +59,7 @@ describe('settingsService', () => {
 			JSON.stringify({
 				autoStart: true,
 				llm: {
-					baseUrl: 'https://api.openai.com/v1/chat/completions',
+					baseUrl: 'https://www.uni-router.net/v1/chat/completions',
 					apiKey: 'old-key',
 					model: 'gpt-4o-mini',
 					temperature: 0.7,
@@ -70,7 +70,7 @@ describe('settingsService', () => {
 		const llm = getLlmConfig()
 		expect(llm.useFullUrl).toBe(true)
 		expect(llm.platform).toBe('custom')
-		expect(llm.baseUrl).toBe('https://api.openai.com/v1/chat/completions')
+		expect(llm.baseUrl).toBe('https://www.uni-router.net/v1/chat/completions')
 		expect(isLlmConfigured()).toBe(true)
 	})
 
@@ -78,7 +78,7 @@ describe('settingsService', () => {
 		writeSettings({
 			llm: {
 				platform: 'unirouter',
-				baseUrl: 'https://api.uni-router.net',
+				baseUrl: 'https://www.uni-router.net',
 				useFullUrl: false,
 				apiKey: 'k',
 				model: 'm'
